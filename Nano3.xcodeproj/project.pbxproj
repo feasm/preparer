@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A08A608646D1898C46A029DA /* Pods_Nano3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150A71A2FE093E1A1EF94078 /* Pods_Nano3.framework */; };
 		BC1FDAA22037448200372D1E /* IconViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1FDAA12037448200372D1E /* IconViewCell.swift */; };
 		BC31ED422028E31300727D5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC31ED412028E31300727D5F /* AppDelegate.swift */; };
 		BC31ED442028E31300727D5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC31ED432028E31300727D5F /* ViewController.swift */; };
@@ -35,9 +36,23 @@
 		BC80E0E3202C9F74008BCCBC /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC80E0E2202C9F73008BCCBC /* Animations.swift */; };
 		BC80E0E5202CBB93008BCCBC /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC80E0E4202CBB93008BCCBC /* Builder.swift */; };
 		BC80E0E7202DF0D1008BCCBC /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC80E0E6202DF0D1008BCCBC /* Task.swift */; };
+		C6234B5522AEF07B009E4A68 /* Nano3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6234B5422AEF07B009E4A68 /* Nano3Tests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C6234B5722AEF07B009E4A68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC31ED362028E31300727D5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC31ED3D2028E31300727D5F;
+			remoteInfo = Nano3;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		150A71A2FE093E1A1EF94078 /* Pods_Nano3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nano3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6FDF6B6EF3A908A853F9F6 /* Pods-Nano3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nano3.debug.xcconfig"; path = "Target Support Files/Pods-Nano3/Pods-Nano3.debug.xcconfig"; sourceTree = "<group>"; };
+		5B80176B117963D9CC6EE7E2 /* Pods-Nano3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nano3.release.xcconfig"; path = "Target Support Files/Pods-Nano3/Pods-Nano3.release.xcconfig"; sourceTree = "<group>"; };
 		BC1FDAA12037448200372D1E /* IconViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViewCell.swift; sourceTree = "<group>"; };
 		BC31ED3E2028E31300727D5F /* Nano3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC31ED412028E31300727D5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,10 +83,21 @@
 		BC80E0E2202C9F73008BCCBC /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		BC80E0E4202CBB93008BCCBC /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		BC80E0E6202DF0D1008BCCBC /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		C6234B5222AEF07B009E4A68 /* Nano3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Nano3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6234B5422AEF07B009E4A68 /* Nano3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano3Tests.swift; sourceTree = "<group>"; };
+		C6234B5622AEF07B009E4A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BC31ED3B2028E31300727D5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A08A608646D1898C46A029DA /* Pods_Nano3.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6234B4F22AEF07B009E4A68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,11 +107,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040E6751C0ECEACCE7DB6400 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				150A71A2FE093E1A1EF94078 /* Pods_Nano3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		043F1442CBB9597339FB7636 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D6FDF6B6EF3A908A853F9F6 /* Pods-Nano3.debug.xcconfig */,
+				5B80176B117963D9CC6EE7E2 /* Pods-Nano3.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BC31ED352028E31300727D5F = {
 			isa = PBXGroup;
 			children = (
 				BC31ED402028E31300727D5F /* Nano3 */,
+				C6234B5322AEF07B009E4A68 /* Nano3Tests */,
 				BC31ED3F2028E31300727D5F /* Products */,
+				043F1442CBB9597339FB7636 /* Pods */,
+				040E6751C0ECEACCE7DB6400 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				BC31ED3E2028E31300727D5F /* Nano3.app */,
+				C6234B5222AEF07B009E4A68 /* Nano3Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,13 +248,13 @@
 			path = Builders;
 			sourceTree = "<group>";
 		};
-		BC3B40F0203B544700D63D28 /* Add Question */ = {
+		BC3B40F0203B544700D63D28 /* AddQuestion */ = {
 			isa = PBXGroup;
 			children = (
 				BC3B40F4203B588600D63D28 /* Controller */,
 				BC3B40F2203B587E00D63D28 /* Model */,
 			);
-			path = "Add Question";
+			path = AddQuestion;
 			sourceTree = "<group>";
 		};
 		BC3B40F1203B545400D63D28 /* Modules */ = {
@@ -215,7 +262,7 @@
 			children = (
 				BC31ED56202A299500727D5F /* Tasks */,
 				BC31ED57202A2A0A00727D5F /* Test */,
-				BC3B40F0203B544700D63D28 /* Add Question */,
+				BC3B40F0203B544700D63D28 /* AddQuestion */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -245,6 +292,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		C6234B5322AEF07B009E4A68 /* Nano3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C6234B5422AEF07B009E4A68 /* Nano3Tests.swift */,
+				C6234B5622AEF07B009E4A68 /* Info.plist */,
+			);
+			path = Nano3Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,6 +308,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC31ED502028E31300727D5F /* Build configuration list for PBXNativeTarget "Nano3" */;
 			buildPhases = (
+				63AF937F287F3FE4D9E6B45E /* [CP] Check Pods Manifest.lock */,
 				BC31ED3A2028E31300727D5F /* Sources */,
 				BC31ED3B2028E31300727D5F /* Frameworks */,
 				BC31ED3C2028E31300727D5F /* Resources */,
@@ -265,19 +322,42 @@
 			productReference = BC31ED3E2028E31300727D5F /* Nano3.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C6234B5122AEF07B009E4A68 /* Nano3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6234B5922AEF07B009E4A68 /* Build configuration list for PBXNativeTarget "Nano3Tests" */;
+			buildPhases = (
+				C6234B4E22AEF07B009E4A68 /* Sources */,
+				C6234B4F22AEF07B009E4A68 /* Frameworks */,
+				C6234B5022AEF07B009E4A68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6234B5822AEF07B009E4A68 /* PBXTargetDependency */,
+			);
+			name = Nano3Tests;
+			productName = Nano3Tests;
+			productReference = C6234B5222AEF07B009E4A68 /* Nano3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		BC31ED362028E31300727D5F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Felipe Melo";
 				TargetAttributes = {
 					BC31ED3D2028E31300727D5F = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					C6234B5122AEF07B009E4A68 = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BC31ED3D2028E31300727D5F;
 					};
 				};
 			};
@@ -295,6 +375,7 @@
 			projectRoot = "";
 			targets = (
 				BC31ED3D2028E31300727D5F /* Nano3 */,
+				C6234B5122AEF07B009E4A68 /* Nano3Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -310,7 +391,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C6234B5022AEF07B009E4A68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63AF937F287F3FE4D9E6B45E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nano3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC31ED3A2028E31300727D5F /* Sources */ = {
@@ -345,7 +458,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C6234B4E22AEF07B009E4A68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6234B5522AEF07B009E4A68 /* Nano3Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6234B5822AEF07B009E4A68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC31ED3D2028E31300727D5F /* Nano3 */;
+			targetProxy = C6234B5722AEF07B009E4A68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BC31ED452028E31300727D5F /* Main.storyboard */ = {
@@ -476,6 +605,7 @@
 		};
 		BC31ED512028E31300727D5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D6FDF6B6EF3A908A853F9F6 /* Pods-Nano3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -491,6 +621,7 @@
 		};
 		BC31ED522028E31300727D5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B80176B117963D9CC6EE7E2 /* Pods-Nano3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -501,6 +632,49 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C6234B5A22AEF07B009E4A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XWMMXB4KD;
+				INFOPLIST_FILE = Nano3Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ada.Nano3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nano3.app/Nano3";
+			};
+			name = Debug;
+		};
+		C6234B5B22AEF07B009E4A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XWMMXB4KD;
+				INFOPLIST_FILE = Nano3Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ada.Nano3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nano3.app/Nano3";
 			};
 			name = Release;
 		};
@@ -521,6 +695,15 @@
 			buildConfigurations = (
 				BC31ED512028E31300727D5F /* Debug */,
 				BC31ED522028E31300727D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6234B5922AEF07B009E4A68 /* Build configuration list for PBXNativeTarget "Nano3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6234B5A22AEF07B009E4A68 /* Debug */,
+				C6234B5B22AEF07B009E4A68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
