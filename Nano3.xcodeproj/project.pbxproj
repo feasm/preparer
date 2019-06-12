@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A08A608646D1898C46A029DA /* Pods_Nano3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150A71A2FE093E1A1EF94078 /* Pods_Nano3.framework */; };
 		BC1FDAA22037448200372D1E /* IconViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1FDAA12037448200372D1E /* IconViewCell.swift */; };
 		BC31ED422028E31300727D5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC31ED412028E31300727D5F /* AppDelegate.swift */; };
 		BC31ED442028E31300727D5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC31ED432028E31300727D5F /* ViewController.swift */; };
@@ -50,7 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		150A71A2FE093E1A1EF94078 /* Pods_Nano3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nano3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D6FDF6B6EF3A908A853F9F6 /* Pods-Nano3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nano3.debug.xcconfig"; path = "Target Support Files/Pods-Nano3/Pods-Nano3.debug.xcconfig"; sourceTree = "<group>"; };
 		5B80176B117963D9CC6EE7E2 /* Pods-Nano3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nano3.release.xcconfig"; path = "Target Support Files/Pods-Nano3/Pods-Nano3.release.xcconfig"; sourceTree = "<group>"; };
 		BC1FDAA12037448200372D1E /* IconViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViewCell.swift; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A08A608646D1898C46A029DA /* Pods_Nano3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +107,6 @@
 		040E6751C0ECEACCE7DB6400 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				150A71A2FE093E1A1EF94078 /* Pods_Nano3.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
