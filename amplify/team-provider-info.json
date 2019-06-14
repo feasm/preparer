@@ -1,0 +1,14 @@
+{
+    "preparer": {
+        "awscloudformation": {
+            "AuthRoleName": "preparer-preparer-20190612175922-authRole",
+            "UnauthRoleArn": "arn:aws:iam::723751786945:role/preparer-preparer-20190612175922-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::723751786945:role/preparer-preparer-20190612175922-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "preparer-preparer-20190612175922-deployment",
+            "UnauthRoleName": "preparer-preparer-20190612175922-unauthRole",
+            "StackName": "preparer-preparer-20190612175922",
+            "StackId": "arn:aws:cloudformation:us-east-2:723751786945:stack/preparer-preparer-20190612175922/2964a8b0-8d55-11e9-b663-0ab3f1b1cb5a"
+        }
+    }
+}

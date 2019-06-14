@@ -6,5 +6,7 @@ target 'Nano3' do
   use_frameworks!
 
   # Pods for Nano3
+  pod 'AWSCore', '~> 2.9.6'
+  pod 'AWSAppSync', '~> 2.12.0'
 
 end

@@ -7,21 +7,50 @@
 //
 
 import UIKit
+import AWSAppSync
 
 class TasksViewController: UIViewController {
 
     // Outlets
     @IBOutlet weak var tableView: UITableView!
     
+    // Properties
+    var appSyncClient: AWSAppSyncClient?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         setup()
+    }
+    func runMutation(){
+        let mutationInput = CreateTodoInput(name: "Use AppSync", description:"Realtime and Offline")
+        appSyncClient?.perform(mutation: CreateTodoMutation(input: mutationInput)) { [weak self] (result, error) in
+            if let error = error as? AWSAppSyncClientError {
+                print("Error occurred: \(error.localizedDescription )")
+            }
+            if let resultError = result?.errors {
+                print("Error saving the item on server: \(resultError)")
+                return
+            }
+            
+            self?.runQuery()
+        }
+    }
+    
+    func runQuery(){
+        appSyncClient?.fetch(query: ListTodosQuery(), cachePolicy: .returnCacheDataAndFetch) {(result, error) in
+            if error != nil {
+                print(error?.localizedDescription ?? "")
+                return
+            }
+            
+            result?.data?.listTodos?.items!.forEach { print(($0?.name)! + " " + ($0?.description)! + "\n") }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.tableView.reloadData()
+        
+        runQuery()
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,7 +59,13 @@ class TasksViewController: UIViewController {
     }
     
     private func setup() {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appSyncClient = appDelegate.appSyncClient
         setupTableView()
+    }
+    
+    @IBAction func addTaskBtnPressed(_ sender: Any) {
+//        runMutation()
     }
 }
 

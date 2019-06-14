@@ -590,6 +590,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="4mM-i2-mWc">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
+                                <action selector="addTaskBtnPressed:" destination="mkt-WW-cDI" id="p0n-gg-7x8"/>
                                 <segue destination="Erz-Ve-4O1" kind="show" id="OqC-ou-nvy"/>
                             </connections>
                         </barButtonItem>
